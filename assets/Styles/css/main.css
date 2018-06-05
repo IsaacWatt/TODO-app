@@ -1,4 +1,6 @@
-body {
-  background: red; }
+#container {
+  background: gray;
+  width: 360px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
