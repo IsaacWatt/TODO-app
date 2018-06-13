@@ -8,7 +8,7 @@ $(document).ready(function() {
   $("span").click(function(event) {
     $(this).parent().fadeOut("slow", function() {
       $(this).parent().remove();
-    })
+    });
     event.stopPropagation(); // stops bubbling
   })
 });
