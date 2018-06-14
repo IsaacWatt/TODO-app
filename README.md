@@ -1,2 +1,3 @@
 # TODO-app
-a web app for listing TODO's
+front end development practice
+a web app for listing TODO's 
