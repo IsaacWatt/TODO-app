@@ -10,7 +10,7 @@ $(document).ready(function() {
       $(this).remove();
     });
     event.stopPropagation(); // stops bubbling
-  })
+  });
 
   $("input[type='text']").keypress( function(event) {
     if (event.which === 13) { // enter key
