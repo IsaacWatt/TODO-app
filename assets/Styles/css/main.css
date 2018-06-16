@@ -1,3 +1,12 @@
+body {
+  font-family: Roboto;
+  background: #c21500;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc500, #c21500);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
 h1 {
   background: #2980b9;
   color: white;
@@ -6,6 +15,17 @@ h1 {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: normal; }
+
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0; }
 
 ul {
   list-style: none;
@@ -18,6 +38,9 @@ ul {
     color: #666; }
     ul li:nth-child(2n) {
       background: #f7f7f7; }
+    ul li:hover span {
+      width: 40px;
+      opacity: 1; }
 
 input {
   font-size: 18px;
@@ -25,7 +48,8 @@ input {
   width: 100%;
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
-  color: #2980b9; }
+  color: #2980b9;
+  border: 3px solid rgba(0, 0, 0, 0); }
   input:focus {
     background: white;
     border: 3px solid #2980b9;
@@ -33,15 +57,8 @@ input {
 
 .fa-plus {
   float: right; }
-
-body {
-  font-family: Roboto;
-  background: #c21500;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffc500, #c21500);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffc500, #c21500);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .fa-plus:hover {
+    cursor: pointer; }
 
 #container {
   width: 360px;

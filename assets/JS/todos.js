@@ -13,13 +13,17 @@ $(document).ready(function() {
   });
 
   $("input[type='text']").keypress( function(event) {
-    if (event.which === 13) { // enter key
+    if (event. which === 13) { // enter key
       var toDo = $(this).val();
       $(this).val("");
-      var spanTag = "<span>X </span>"
+      var spanTag = "<span><i class='fa fa-trash'></i></span>"
 
       $("ul").append("<li> " + spanTag + toDo +"</li>")
     }
+  });
+
+  $(".fa-plus").click(function() {
+    $("input[type='text']").fadeToggle();
   });
 
 });
